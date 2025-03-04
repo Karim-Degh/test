@@ -16,11 +16,976 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.4.1",
-        "cells": []
+        "cells": [
+          {
+            "angle": 270,
+            "position": {
+              "x": 468,
+              "y": -425
+            },
+            "size": {
+              "width": 310,
+              "height": 440
+            },
+            "attrs": {
+              "label": {
+                "text": "Internal Hospital Network Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "af3bf3e2-149f-4a36-95e9-fcb745b28bf2",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Internal Hospital Network Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 190,
+              "y": -355
+            },
+            "size": {
+              "width": 400,
+              "height": 140
+            },
+            "attrs": {
+              "label": {
+                "text": "Internet Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "b17e4653-6ea1-4037-803d-472b60a9e37d",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Internet Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 200,
+              "y": -315
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient\n"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "8b9f6da8-c488-49fd-88f0-26d5e8fb3b9b"
+                },
+                {
+                  "group": "right",
+                  "id": "7efa7585-43f9-4236-b492-46a045861f86"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7863bab2-ad51-4a5c-9b59-75cf74510818"
+                },
+                {
+                  "group": "left",
+                  "id": "69aa55d5-5097-4926-8cee-559aadc6a5ef"
+                }
+              ]
+            },
+            "id": "a977dd6b-30d2-48ff-b2eb-244f9a16a567",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Patient\n",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "7eb97183-832e-4c1a-9a6a-7a21dfd1711b",
+                  "title": "Patient Impersonation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "A malicious actor impersonates a legitimate patient to request a prescription.",
+                  "mitigation": "Implement multi-factor authentication (MFA) for patient logins and verify identity via medical records.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 3,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 190,
+              "y": -148
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Pharmacist"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "8b9f6da8-c488-49fd-88f0-26d5e8fb3b9b"
+                },
+                {
+                  "group": "right",
+                  "id": "7efa7585-43f9-4236-b492-46a045861f86"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7863bab2-ad51-4a5c-9b59-75cf74510818"
+                },
+                {
+                  "group": "left",
+                  "id": "69aa55d5-5097-4926-8cee-559aadc6a5ef"
+                }
+              ]
+            },
+            "id": "ab7aa891-5626-4874-924e-75dbdb64da06",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Pharmacist",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "c8b1cfdd-c71d-4bc0-9964-c5201810ce17",
+                  "title": "Pharmacist Denies Authorization",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A pharmacist denies approving a fraudulent prescription despite having done so.",
+                  "mitigation": "Implement logging with secure timestamps and require digital signatures for approvals.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 430,
+              "y": -360
+            },
+            "size": {
+              "width": 180,
+              "height": 150
+            },
+            "attrs": {
+              "text": {
+                "text": "Refill Request Process"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "2b868695-0d2b-4676-becc-616cfc4a74fa"
+                },
+                {
+                  "group": "right",
+                  "id": "203ccee9-f2ba-43b2-a5ea-c8840f52ea18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "face5496-3311-4ee8-a3d1-198a3a8fdd19"
+                },
+                {
+                  "group": "left",
+                  "id": "c605833b-21c5-479b-a79a-72a3e13a71f2"
+                }
+              ]
+            },
+            "id": "dffdac7e-8ce4-4a74-8461-3ad44b4019a5",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Refill Request Process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "31cd709d-4316-4b35-b70e-6ee3c5b9e56a",
+                  "title": "System Overload Attack",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "An attacker sends excessive refill requests to overload the system.",
+                  "mitigation": "Rate limit requests, implement CAPTCHA, and monitor traffic for anomalies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 623,
+              "y": -173
+            },
+            "size": {
+              "width": 150,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Approval System"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "2b868695-0d2b-4676-becc-616cfc4a74fa"
+                },
+                {
+                  "group": "right",
+                  "id": "203ccee9-f2ba-43b2-a5ea-c8840f52ea18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "face5496-3311-4ee8-a3d1-198a3a8fdd19"
+                },
+                {
+                  "group": "left",
+                  "id": "c605833b-21c5-479b-a79a-72a3e13a71f2"
+                }
+              ]
+            },
+            "id": "af565771-205d-4eff-b87e-d3d4af498b1e",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Approval System",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "3accf55c-bbda-4a05-9041-7a07b7e56a37",
+                  "title": "Pharmacist Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A pharmacist denies having approved a fraudulent prescription request.",
+                  "mitigation": "Implement logging with secure timestamps and digital signatures.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 663,
+              "y": -355
+            },
+            "size": {
+              "width": 160,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient Records Database."
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "fe914d01-a62d-4d20-a106-c4bcefc554d4"
+                },
+                {
+                  "group": "right",
+                  "id": "c97e46ed-dc17-4d25-b5f5-99e66be828a6"
+                },
+                {
+                  "group": "bottom",
+                  "id": "c9fee180-26ce-48a1-ad40-a77983ead199"
+                },
+                {
+                  "group": "left",
+                  "id": "12f3914a-43f7-4131-b439-646df9a10643"
+                }
+              ]
+            },
+            "id": "4362eebc-8ed5-4829-9d18-b577b45bb386",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Store",
+              "name": "Patient Records Database.",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "c9606656-84e1-4362-8831-741b003246d7",
+                  "title": "Patient Data Exposure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "An attacker intercepts sensitive patient prescription data.",
+                  "mitigation": "Encrypt all stored and transmitted patient data. Use HTTPS and database encryption.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send to Pharmacist",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Send to Pharmacist"
+            ],
+            "id": "8531ccf8-69f0-4b97-bb2f-f71da4e95fcc",
+            "source": {
+              "cell": "dffdac7e-8ce4-4a74-8461-3ad44b4019a5",
+              "port": "203ccee9-f2ba-43b2-a5ea-c8840f52ea18"
+            },
+            "target": {
+              "cell": "af565771-205d-4eff-b87e-d3d4af498b1e",
+              "port": "2b868695-0d2b-4676-becc-616cfc4a74fa"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": -200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store Decision",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Store Decision"
+            ],
+            "id": "3c1657e1-1446-41ee-9204-eb51a42b6e25",
+            "source": {
+              "cell": "af565771-205d-4eff-b87e-d3d4af498b1e",
+              "port": "c605833b-21c5-479b-a79a-72a3e13a71f2"
+            },
+            "target": {
+              "cell": "dffdac7e-8ce4-4a74-8461-3ad44b4019a5",
+              "port": "face5496-3311-4ee8-a3d1-198a3a8fdd19"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": -140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notify Patient",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Notify Patient"
+            ],
+            "id": "e07e3803-57c4-4828-ac49-8025d89da331",
+            "source": {
+              "cell": "af565771-205d-4eff-b87e-d3d4af498b1e",
+              "port": "face5496-3311-4ee8-a3d1-198a3a8fdd19"
+            },
+            "target": {
+              "cell": "a977dd6b-30d2-48ff-b2eb-244f9a16a567",
+              "port": "7863bab2-ad51-4a5c-9b59-75cf74510818"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request Refill",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "01dbe272-4687-45b4-a022-b90f39bb6d13",
+                  "title": "Tampering with Request",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker modifies a refill request in transit to change the prescription details.",
+                  "mitigation": "Use TLS encryption for data in transit and implement digital signatures for requests.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Request Refill"
+            ],
+            "id": "ae4a74b1-2d20-4d0f-8928-f1e01831673c",
+            "source": {
+              "cell": "a977dd6b-30d2-48ff-b2eb-244f9a16a567",
+              "port": "7efa7585-43f9-4236-b492-46a045861f86"
+            },
+            "target": {
+              "cell": "dffdac7e-8ce4-4a74-8461-3ad44b4019a5",
+              "port": "c605833b-21c5-479b-a79a-72a3e13a71f2"
+            },
+            "vertices": []
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 7
   }
 }
