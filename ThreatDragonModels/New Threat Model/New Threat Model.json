@@ -336,13 +336,6 @@
                 "spoofing": 0,
                 "repudiation": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -792,56 +785,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Send to Pharmacist",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Send to Pharmacist"
-            ],
-            "id": "8531ccf8-69f0-4b97-bb2f-f71da4e95fcc",
-            "source": {
-              "cell": "dffdac7e-8ce4-4a74-8461-3ad44b4019a5",
-              "port": "203ccee9-f2ba-43b2-a5ea-c8840f52ea18"
-            },
-            "target": {
-              "cell": "af565771-205d-4eff-b87e-d3d4af498b1e",
-              "port": "2b868695-0d2b-4676-becc-616cfc4a74fa"
-            },
-            "vertices": [
-              {
-                "x": 670,
-                "y": -200
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Store Decision",
               "description": "",
               "outOfScope": false,
@@ -980,6 +923,56 @@
               "port": "c605833b-21c5-479b-a79a-72a3e13a71f2"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send to Pharmacist",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Send to Pharmacist"
+            ],
+            "id": "8531ccf8-69f0-4b97-bb2f-f71da4e95fcc",
+            "source": {
+              "cell": "dffdac7e-8ce4-4a74-8461-3ad44b4019a5",
+              "port": "203ccee9-f2ba-43b2-a5ea-c8840f52ea18"
+            },
+            "target": {
+              "cell": "af565771-205d-4eff-b87e-d3d4af498b1e",
+              "port": "2b868695-0d2b-4676-becc-616cfc4a74fa"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": -200
+              }
+            ]
           }
         ]
       }
