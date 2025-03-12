@@ -34,8 +34,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "af3bf3e2-149f-4a36-95e9-fcb745b28bf2",
             "zIndex": -1,
+            "id": "af3bf3e2-149f-4a36-95e9-fcb745b28bf2",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internal Hospital Network Boundary",
@@ -60,8 +60,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "b17e4653-6ea1-4037-803d-472b60a9e37d",
             "zIndex": -1,
+            "id": "b17e4653-6ea1-4037-803d-472b60a9e37d",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internet Boundary",
@@ -91,6 +91,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -174,7 +175,6 @@
               ]
             },
             "id": "a977dd6b-30d2-48ff-b2eb-244f9a16a567",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Patient\n",
@@ -225,6 +225,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -308,7 +309,6 @@
               ]
             },
             "id": "ab7aa891-5626-4874-924e-75dbdb64da06",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Pharmacist",
@@ -359,6 +359,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -442,7 +443,6 @@
               ]
             },
             "id": "dffdac7e-8ce4-4a74-8461-3ad44b4019a5",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Refill Request Process",
@@ -500,6 +500,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -583,7 +584,6 @@
               ]
             },
             "id": "af565771-205d-4eff-b87e-d3d4af498b1e",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Approval System",
@@ -646,6 +646,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -729,7 +730,6 @@
               ]
             },
             "id": "4362eebc-8ed5-4829-9d18-b577b45bb386",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Patient Records Database.",
